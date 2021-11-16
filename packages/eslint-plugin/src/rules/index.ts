@@ -83,6 +83,9 @@ import nonNullableTypeAssertionStyle from './non-nullable-type-assertion-style';
 import objectCurlySpacing from './object-curly-spacing';
 import preferAsConst from './prefer-as-const';
 import preferEnumInitializers from './prefer-enum-initializers';
+import preferEqualityEnumMember, {
+  ruleName,
+} from './prefer-equality-enum-member';
 import preferForOf from './prefer-for-of';
 import preferFunctionType from './prefer-function-type';
 import preferIncludes from './prefer-includes';
@@ -201,6 +204,7 @@ export default {
   'object-curly-spacing': objectCurlySpacing,
   'prefer-as-const': preferAsConst,
   'prefer-enum-initializers': preferEnumInitializers,
+  [`${ruleName}`]: preferEqualityEnumMember,
   'prefer-for-of': preferForOf,
   'prefer-function-type': preferFunctionType,
   'prefer-includes': preferIncludes,
